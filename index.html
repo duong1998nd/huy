@@ -4,7 +4,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  <img src="https://ajlovechina.github.io/loveBalloon/static/music.png"
+   style="position: fixed;z-index: 10001;top:20px;right:20px;" onclick="let m = document.querySelector('.song-audio-autoplay');
+    if (m.paused ) {m.play(); this.className = 'rotateImages'} else {m.pause(); this.className = ''}">
+  <audio class="song-audio-autoplay" controls loop style="display: none;visibility: hidden">
+      <source src="cmsn.mp3" type="audio/mp3"/>
+  </audio>
 <div class="bg_heart">
         
 </div>
